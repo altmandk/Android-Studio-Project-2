@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/displayInfo"
+        android:title="Info" />
+
+    <item
+        android:id="@+id/toTrailer"
+        android:title="Trailer" />
+
+    <item
+        android:id="@+id/toWiki"
+        android:title="Wikipedia" />
+
+    <item
+        android:id="@+id/toImdb"
+        android:title="IMDB" />
+</menu>

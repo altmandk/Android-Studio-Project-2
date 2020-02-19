@@ -1,18 +1,335 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:context=".MainActivity"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:orientation="vertical"
+        android:background="@color/movieColor"
+        >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <View style="@style/Divider"
+            android:background="@color/dividerColor"/>
+
+        <LinearLayout
+            android:id="@+id/coco"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:orientation="horizontal"
+            android:background="@color/movieColor">
+
+            <Button
+                android:id="@+id/cocoButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.25"
+                android:background="@drawable/coco"
+                android:onClick="onClick"/>
+
+            <LinearLayout
+                android:id="@+id/cocoText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:onClick="onClick">
+
+                <TextView
+                    android:id="@+id/cocoTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/cocoTitle"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/cocoYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cocoYear"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/Divider"
+            android:background="@color/dividerColor"/>
+
+        <LinearLayout
+            android:id="@+id/infinity"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:orientation="horizontal"
+            android:background="@color/movieColor">
+
+            <Button
+                android:id="@+id/infinityButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.25"
+                android:background="@drawable/infinity"
+                android:onClick="onClick"/>
+
+            <LinearLayout
+                android:id="@+id/infinityText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:onClick="onClick">
+
+                <TextView
+                    android:id="@+id/infinityTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/infinityTitle"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textColor"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/infinityYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/infinityYear"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/Divider"
+            android:background="@color/dividerColor"/>
+
+        <LinearLayout
+            android:id="@+id/joker"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:orientation="horizontal"
+            android:background="@color/movieColor">
+
+            <Button
+                android:id="@+id/jokerButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.25"
+                android:background="@drawable/joker"
+                android:onClick="onClick"/>
+
+            <LinearLayout
+                android:id="@+id/jokerText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:onClick="onClick">
+
+                <TextView
+                    android:id="@+id/jokerTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/jokerTitle"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textColor"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/jokerYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/jokerYear"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/Divider"
+            android:background="@color/dividerColor"/>
+
+        <LinearLayout
+            android:id="@+id/knives"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:orientation="horizontal"
+            android:background="@color/movieColor">
+
+            <Button
+                android:id="@+id/knivesButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.25"
+                android:background="@drawable/knives"
+                android:onClick="onClick"/>
+
+            <LinearLayout
+                android:id="@+id/knivesText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:onClick="onClick">
+
+                <TextView
+                    android:id="@+id/knivesTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/knivesTitle"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:textSize="28dp"
+                    android:textColor="@color/textColor"
+                    android:textStyle="bold"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/knivesYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/knivesYear"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/Divider"
+            android:background="@color/dividerColor"/>
+
+        <LinearLayout
+            android:id="@+id/parasite"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:orientation="horizontal"
+            android:background="@color/movieColor">
+
+            <Button
+                android:id="@+id/parasiteButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.25"
+                android:background="@drawable/parasite"
+                android:onClick="onClick"/>
+
+            <LinearLayout
+                android:id="@+id/parasiteText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:onClick="onClick">
+
+                <TextView
+                    android:id="@+id/parasiteTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/parasiteTitle"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textColor"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/parasiteYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/parasiteYear"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/Divider"
+            android:background="@color/dividerColor"/>
+
+        <LinearLayout
+            android:id="@+id/uncut"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:orientation="horizontal"
+            android:background="@color/movieColor">
+
+            <Button
+                android:id="@+id/uncutButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.25"
+                android:background="@drawable/uncut"
+                android:onClick="onClick"/>
+
+            <LinearLayout
+                android:id="@+id/uncutText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:onClick="onClick">
+
+                <TextView
+                    android:id="@+id/uncutTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/uncutTitle"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textColor"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/uncutYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/uncutYear"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/Divider"
+            android:background="@color/dividerColor"/>
+    </LinearLayout>
+</ScrollView>
