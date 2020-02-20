@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/uncutDisplayInfo"
+        android:title="Movie Info" />
+
+    <item
+        android:id="@+id/uncutToTrailer"
+        android:title="Movie Trailer" />
+
+    <item
+        android:id="@+id/uncutToWiki"
+        android:title="Director Wikipedia" />
+
+    <item
+        android:id="@+id/uncutToImdb"
+        android:title="IMDB Page" />
+</menu>

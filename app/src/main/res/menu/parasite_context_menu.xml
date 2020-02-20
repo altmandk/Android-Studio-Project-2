@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/parasiteDisplayInfo"
+        android:title="Movie Info" />
+
+    <item
+        android:id="@+id/parasiteToTrailer"
+        android:title="Movie Trailer" />
+
+    <item
+        android:id="@+id/parasiteToWiki"
+        android:title="Director Wikipedia" />
+
+    <item
+        android:id="@+id/parasiteToImdb"
+        android:title="IMDB Page" />
+</menu>
